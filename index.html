@@ -140,8 +140,11 @@
       
       <div class="row">
         <div class="col-lg-6" data-aos="fade-up">
+        <div id="search-buscador">
+          <input type="text" class="form-control" id="buscador" onkeyup="myFunction()" placeholder="Buscar por Artista ...">
+        </div>
           <h3 class="resume-title">Eventos Realizados </h3>
-          <div class="resume-item pb-0">
+          <div class="resume-item pb-0" id="buscar">
 
           <h3 class="resume-title">Rock</h3>
           <div class="resume-item">
@@ -153,7 +156,13 @@
           <div class="resume-item">
             <h4 id="Iron Maiden" ><a href="ironmaiden_estadionacional.html" style="color: #2DB6A3;" target="_blank">Iron Maiden</a></h4>
             <h5>10 de abril de 2011</h5>
-            <p><em>estadio Nacional Ñuñoa, Santiago de Chile.</em></p>
+            <p><em>Estadio Nacional Ñuñoa, Santiago de Chile.</em></p>
+          </div>
+
+          <div class="resume-item">
+            <h4 id="Iron Maiden" ><a href="metallica_club_hipico.html" style="color: #2DB6A3;" target="_blank">Metallica</a></h4>
+            <h5>26 de enero de 2010</h5>
+            <p><em>Club Hipico , Santiago de Chile.</em></p>
           </div>
 
           <h3 class="resume-title">Pop</h3>
@@ -161,6 +170,12 @@
             <h4><a href="beyoncé_movistar_arena.html" style="color: #2DB6A3;" target="_blank">Beyoncé</a></h4>
             <h5>14 de febrero de 2010</h5>
             <p><em>Movistar Arena Parque O´Higgins, Santiago de Chile. </em></p>
+          </div>
+
+          <div class="resume-item">
+            <h4><a href="Britney_Spears_Estadio_Nacional.html" style="color: #2DB6A3;" target="_blank">Britney Spears</a></h4>
+            <h5>22 de noviembre de 2011</h5>
+            <p><em>Estadio Nacional, Santiago de Chile. </em></p>
           </div>
 
           <h3 class="resume-title">Urbano</h3>
@@ -192,19 +207,23 @@
       <div class="row" data-aos="fade-up">
         <div class="col-lg-12 d-flex justify-content-center">
           <ul id="portfolio-flters">
+            <li data-filter="#"  style="color: #2DB6A3;">Buscar por Genero:</li>
             <li data-filter="*" class="filter-active">Todos</li>
             <li data-filter=".filter-app">Rock</li>
             <li data-filter=".filter-card">Pop</li>
             <li data-filter=".filter-web">Urbano</li>
           </ul>
+          <div id="search-buscador">
+            <input type="text" class="form-control" id="buscador2" onkeyup="myFunction()" placeholder="Buscar por Artista ...">
+          </div>
         </div>
       </div>
-
-      <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
+      <div data-aos="fade-up" data-aos-delay="100" >
+      <div class="row portfolio-container" id="buscar2" >
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="logos_compra/RAM_logo.png" class="img-fluid" alt="">
+            <img src="logos_compra/RAM_logo.png" class="img-fluid" alt="Rage Against The Machine">
+            <h4>Rage Against The Machine</h4>
             <div class="portfolio-links">
               <a href="rage_against_the_machine_imag/6FUEN4MRUVD6PNDFKDH2V26S3M.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Rage Against the Machine (también conocido como Rage o RATM) es un grupo musical estadounidense de rap metal fundado en el año 1991 por Tom Morello y Zack de la Rocha. Junto con Tim Commerford y Brad Wilk, el grupo tocó durante toda la década de 1990 hasta su disolución en 2000. Luego se tomaron un descanso indefinido hasta que en abril de 2007 y coincidiendo con la disolución de Audioslave anunciaron su regreso en el festival de música de Coachella en California, siendo la primera vez que tocaban todos juntos en siete años. A raíz de esto, la banda continuó dando conciertos en varios festivales alrededor del mundo hasta 2011, y no sería hasta 2019 que volverían a retomar la banda hasta la actualidad."><i class="bx bx-plus"></i></a>
               <a href="Ratm.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -214,7 +233,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="logos_compra/Iron_Maiden_Logo.png" class="img-fluid" alt="">
+            <img src="logos_compra/Iron_Maiden_Logo.png" class="img-fluid" alt="Iron Maiden">
+            <h4>Iron Maiden</h4>
             <div class="portfolio-links">
               <a href="ironmaiden_imag/maiden.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Iron Maiden es una banda británica de heavy metal fundada en 1975 por el bajista Steve Harris. Es considerada una de las bandas de metal más importantes de todos los tiempos. Ha vendido más de 100 millones de discos en todo el mundo, a pesar de haber contado con poco apoyo de la radio y la televisión comercial durante la mayor parte de su carrera. Sin embargo, la banda basó su éxito en llegar directamente a los aficionados, grabando discos de alta calidad y realizando destacadas actuaciones en vivo."><i class="bx bx-plus"></i></a>
               <a href="ironmaiden.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -224,7 +244,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="logos_compra/beyoncé_logo.png" class="img-fluid" alt="">
+            <img src="logos_compra/beyoncé_logo.png" class="img-fluid" alt="Beyonce">
+            <h4>Beyonce</h4>
             <div class="portfolio-links">
               <a href="beyoncé_imag/beyonce.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Beyoncé Giselle Knowles-Carter (Houston, 4 de septiembre de 1981),4​5​ conocida simplemente como Beyoncé, es una cantautora, productora, actriz, directora, diseñadora y empresaria estadounidense.
 
@@ -236,7 +257,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="logos_compra/metallica.png" class="img-fluid" alt="">
+            <img src="logos_compra/metallica.png" class="img-fluid" alt="Metallica">
+            <h4>Metallica</h4>
             <div class="portfolio-links">
               <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -246,7 +268,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="logos_compra/blacksabbath.png" class="img-fluid" alt="">
+            <img src="logos_compra/blacksabbath.png" class="img-fluid" alt="Black Sabbath">
+            <h4>Black Sabbath</h4>
             <div class="portfolio-links">
               <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -256,7 +279,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="logos_compra/megadeth.png" class="img-fluid" alt="">
+            <img src="logos_compra/megadeth.png" class="img-fluid" alt="Megadeth">
+            <h4>Megadeth</h4>
             <div class="portfolio-links">
               <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -266,7 +290,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="logos_compra/pinkfloyd.png" class="img-fluid" alt="">
+            <img src="logos_compra/pinkfloyd.png" class="img-fluid" alt="Pink Floyd">
+            <h4>Pink Floyd</h4>
             <div class="portfolio-links">
               <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -276,7 +301,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="logos_compra/limpbizkit.png" class="img-fluid" alt="">
+            <img src="logos_compra/limpbizkit.png" class="img-fluid" alt="Limp Bizkit">
+            <h4>Limp Bizkit</h4>
             <div class="portfolio-links">
               <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -286,7 +312,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="logos_compra/mychemicalromance.png" class="img-fluid" alt="">
+            <img src="logos_compra/mychemicalromance.png" class="img-fluid" alt="My Chemical Romance">
+            <h4>My Chemical Romance</h4>
             <div class="portfolio-links">
               <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -296,7 +323,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="logos_compra/daddy.png" class="img-fluid" alt="">
+            <img src="logos_compra/daddy.png" class="img-fluid" alt="Daddy Yankee">
+            <h4>Daddy Yankee</h4>
             <div class="portfolio-links">
               <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -306,7 +334,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="logos_compra/britney.png" class="img-fluid" alt="">
+            <img src="logos_compra/britney.png" class="img-fluid" alt="Britney Spears">
+            <h4>Britney Spears</h4>
             <div class="portfolio-links">
               <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -316,7 +345,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-app">
           <div class="portfolio-wrap">
-            <img src="logos_compra/CHEP.png" class="img-fluid" alt="">
+            <img src="logos_compra/CHEP.png" class="img-fluid" alt="Chancho en Piedra">
+            <h4>Chancho en Piedra</h4>
             <div class="portfolio-links">
               <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -326,7 +356,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="logos_compra/bts.png" class="img-fluid" alt="">
+            <img src="logos_compra/bts.png" class="img-fluid" alt="BTS">
+            <h4>BTS</h4>
             <div class="portfolio-links">
               <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -336,7 +367,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="logos_compra/dua.png" class="img-fluid" alt="">
+            <img src="logos_compra/dua.png" class="img-fluid" alt="Dua Lipa">
+            <h4>Dua Lipa</h4>
             <div class="portfolio-links">
               <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -346,7 +378,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-card">
           <div class="portfolio-wrap">
-            <img src="logos_compra/maroon.png" class="img-fluid" alt="">
+            <img src="logos_compra/maroon.png" class="img-fluid" alt="Maroon 5">
+            <h4>Maroon 5</h4>
             <div class="portfolio-links">
               <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -356,7 +389,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="logos_compra/TiroDeGracia.jpg" class="img-fluid" alt="">
+            <img src="logos_compra/TiroDeGracia.jpg" class="img-fluid" alt="Tiro De Gracia">
+            <h4>Tiro De Gracia</h4>
             <div class="portfolio-links">
               <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -366,7 +400,8 @@
 
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="logos_compra/shamanes.jpg" class="img-fluid" alt="">
+            <img src="logos_compra/shamanes.jpg" class="img-fluid" alt="Shamanes">
+            <h4>Shamanes</h4>
             <div class="portfolio-links">
               <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -374,9 +409,11 @@
           </div>
         </div>
 
+        
         <div class="col-lg-4 col-md-6 portfolio-item filter-web">
           <div class="portfolio-wrap">
-            <img src="logos_compra/mo.jpg" class="img-fluid" alt="">
+            <img src="logos_compra/mo.jpg" class="img-fluid" alt="Movimiento Original">
+            <h4>Movimiento Original</h4>
             <div class="portfolio-links">
               <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
               <a href="portfolio-details.html" title="Ir a la compra" target="_blank"><i class="bx bx-link"></i></a>
@@ -385,7 +422,7 @@
         </div>
 
       </div>
-
+  </div>
     </div>
   </section>
     <section id="nosotros" class="about">
@@ -539,6 +576,66 @@
         }
       }
   </script>
+      <script language="javascript">
+        function myFunction() {
+          var input, filter, section, div, h4, i;
+          input = document.getElementById("buscador");
+          filter = input.value.toUpperCase();
+          section = document.getElementById("buscar");
+          div = section.getElementsByTagName("div");
+  
+          for (i = 0; i < div.length; i++) {
+            h4 = div[i].getElementsByTagName("h4")[0];
+            if (h4) {
+              var palabrasEnFiltro = filter.split(' ');
+              var hallado = 0;
+              for (var filtro of palabrasEnFiltro) {
+                if (h4.innerHTML.toUpperCase().indexOf(filtro) > -1) {
+                  hallado++;
+                }
+              }
+  
+              if (hallado === palabrasEnFiltro.length) {
+                div[i].style.display = "";
+              } else {
+                div[i].style.display = "none";
+              }
+  
+            }
+          }
+  
+        }
+    </script>
+      <script language="javascript">
+        function myFunction() {
+          var input, filter, section, div, h4, i;
+          input = document.getElementById("buscador2");
+          filter = input.value.toUpperCase();
+          section = document.getElementById("buscar2");
+          div = section.getElementsByTagName("div");
+  
+          for (i = 0; i < div.length; i++) {
+            h4 = div[i].getElementsByTagName("h4")[0];
+            if (h4) {
+              var palabrasEnFiltro = filter.split(' ');
+              var hallado = 0;
+              for (var filtro of palabrasEnFiltro) {
+                if (h4.innerHTML.toUpperCase().indexOf(filtro) > -1) {
+                  hallado++;
+                }
+              }
+  
+              if (hallado === palabrasEnFiltro.length) {
+                div[i].style.display = "";
+              } else {
+                div[i].style.display = "none";
+              }
+  
+            }
+          }
+  
+        }
+    </script>
 </body>
 </html>
 <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Volcan%20Villarrica&t=k&z=13&ie=UTF8&iwloc=&output=embed"
