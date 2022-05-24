@@ -148,21 +148,24 @@
             const v_noticia = $('#noticia');
                 $.get("https://pgyex2.azurewebsites.net/api/Noticia").done(function(Not){
                     console.log({Not});
+
                     $.each(Not, function(index,elemento){
                         console.table({elemento});
                         v_noticia.append("Id Noticia: "+elemento.id);
                         v_noticia.append("<br />");
-                        v_noticia.append("Titulo: "+elemento.titulo);
-                        v_noticia.append("<br />");
-                        v_noticia.append("Subtitulo: "+elemento.subtitulo);
+                        v_noticia.append("<h3><b>"+elemento.titulo+"</b></h3>");
+                        v_noticia.append("<h4>"+elemento.subtitulo+"</h4>");
                         v_noticia.append("<br />");
                         v_noticia.append("<img src='"+elemento.imagenUri+"' style= 'width:30%'></img>");
                         v_noticia.append("<br />");
-                        v_noticia.append("Escritor: "+elemento.escritor);
+                        v_noticia.append("<h4>"+elemento.noticiaTexto+"</h4>");
                         v_noticia.append("<br />");
-                        v_noticia.append("Editor: "+elemento.editor);
+                        v_noticia.append("<b>"+"Escritor: "+elemento.escritor+"<b>");
                         v_noticia.append("<br />");
-                        v_noticia.append("Noticia: "+elemento.noticiaTexto);
+                        v_noticia.append("<b>"+"Editor: "+elemento.editor+"<b>");
+                        v_noticia.append("<br />");
+                        v_noticia.append("<br />");
+                        v_noticia.append("<br />");
                         v_noticia.append("<br />");
                         v_noticia.append("<br />");
                         v_noticia.append("<br />");
