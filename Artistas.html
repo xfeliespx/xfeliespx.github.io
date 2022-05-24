@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Iron Maiden, Estadio Nacional Ñuñoa</title>
+  <title>Reality First - Artistas</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
   <link href="assets/img/favicon.png" rel="icon">
@@ -75,7 +75,7 @@
 		height: 95px;
 		border-radius: 50%;
 		z-index: 9;
-		background: #149DDD;
+		background: #2DB6A3;
 		padding: 5px;
 		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
 	}
@@ -135,130 +135,43 @@
     </div>
   </header>
   <main id="main">
-    <section id="breadcrumbs" class="breadcrumbs">
+    <section id="about" class="about">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
-          <div class="section-title">
-            <h2>Iron Maiden</h2>
-          </div>
-          <ol>
-            <li><a href="Eventos.html">Eventos</a></li>
-            <li>Detalles</li>
-          </ol>
+        <div class="section-title">
+          <h2>Artistas</h2>
+          <div class="row" id="onload"></div>
         </div>
-      </div>
-    </section>
-    <section id="portfolio-details" class="portfolio-details">
-      <div class="container">
-        <div class="row gy-4">
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-                <div class="swiper-slide">
-                  <img src="logos_compra/ESTADIO.jpeg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="ironmaiden_imag/maiden13cl-02.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="ironmaiden_imag/thumbs_0001_custom_1589370611.4035.jpg" alt="">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3>Información del concierto</h3>
-              <ul>
-                <li><strong>Categoría</strong>: Rock</li>
-                <li><strong>Ubicación</strong>: Estadio Nacional, Ñuñoa</li>
-                <li><strong>Fecha</strong>: 20 de Abril de 2022</li>
-                <li><strong>Precio</strong>: $45.000</li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <div class="form-group">
-                <button type="submit" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-lg btn-block login-btn" >Agregar al Carrito</button>
-              </div>  
-              <div class="form-group">
-                <button type="submit" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-lg btn-block login-btn">Comprar</button>
-              </div>  
-              <h2>Descripción del evento</h2>
-              <p>
-                Ya habían estado en otras ocasiones pero lo de abril de 2011 fue histórico 
-                y contundente: la Dama de Hierro regaló casi dos horas de show en su 
-                primera vez en el Estadio Nacional, una instancia esperada por los 
-                fanáticos y por la misma banda. Para el recuerdo, los hombres de "Fear of the Dark" 
-                registraron el concierto para disfrutarlo en CD y DVD.
-              </p>
-            </div>
-          </div>
-        </div>
+        <body>
+        <div id="artista"></div>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+          <script type="text/javascript">
+              $(function(){
+                  const v_artista = $('#artista');
+                  $.get("https://pgyex2.azurewebsites.net/api/Artista").done(function(Art){
+                          console.log({Art});
+                          $.each(Art, function(index,element){
+                              console.table({element});
+                              v_artista.append("Id Artista: "+element.id);
+                              v_artista.append("<br />");
+                              v_artista.append("Nombre: "+element.nombre);
+                              v_artista.append("<br />");
+                              v_artista.append("Fecha Nacimiento: "+element.fechaNacimiento);
+                              v_artista.append("<br />");
+                              v_artista.append("Lugar Nacimiento: "+element.lugarNacimiento);
+                              v_artista.append("<br />");
+                              v_artista.append("Pais Nacimiento: "+element.paisNacimiento);
+                              v_artista.append("<br />");
+                              v_artista.append("Edad: "+element.edad);
+                              v_artista.append("<br />");
+                              v_artista.append("Genero: "+element.genero);
+                              v_artista.append("<br />");
+                              v_artista.append("<br />");
+                          });
+                  });
+              });
+          </script>
+        </body>
       </div>
     </section>
   </main>
-  <footer id="footer">
-    <div class="copyright">
-      &copy; Copyright <strong><span>Reality First - 2022</span></strong>
-    </div>
-    <div class="credits">
-      Desarrollado por <a href="#" style="color: #2DB6A3;">Femarick Team</a>
-    </div>
-</footer>
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-<div id="myModal" class="modal fade">
-<div class="modal-dialog modal-login">
-  <div class="modal-content">
-    <div class="modal-header">
-      <div class="avatar">
-        <img src="assets/img/linkedin_profile_image2.png" alt="Avatar">
-      </div>				
-      <h4 class="modal-title">Inicia Sesión</h4>	
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-    </div>
-    <div class="modal-body" id="Cerrarmodal">
-      <form  method="post">
-        <div class="form-group">
-          <input type="email" class="form-control" name="email" placeholder="Correo" required="required">		
-        </div>
-        <div class="form-group">
-          <input type="password" class="form-control" name="password" placeholder="Contraseña" required="required">	
-        </div>        
-        <div class="form-group">
-          <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Entrar</button>
-        </div>  
-        <div class="form-group" align="right">
-          <a href="#">Olvidaste tu contraseña</a>
-        </div>
-      </form>  
-      <div class="form-group">
-        <button data-dismiss="modal"  type="submit" class="btn btn-success btn-lg btn-block login-btn" style="background-color: rgb(14, 177, 14);" >Continuar como Visita</button>
-      </div>  
-    </div>
-    <div class="modal-footer">
-      ¿No tienes una cuenta?<a href="Registro.html" style="color:#2DB6A3"> Regístrate</a>
-    </div>
-  </div>
-</div>
-</div>  1
-  </footer>
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script>
-    $('#Cerrarmodal').on('hidden.bs.modal', function () {
-      
-    });
-  </script>
-</body>
 </html>
