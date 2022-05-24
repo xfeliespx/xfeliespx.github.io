@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>My Chemical Romance, Movistar Arena, Santiago</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    body {
+		font-family: 'Varela Round', sans-serif;
+	}
+	.modal-login {		
+		color: #636363;
+		width: 350px;
+		margin: 80px auto 0;
+	}
+	.modal-login .modal-content {
+		padding: 20px;
+		border-radius: 5px;
+		border: none;
+	}
+	.modal-login .modal-header {
+		border-bottom: none;   
+        position: relative;
+        justify-content: center;
+	}
+	.modal-login h4 {
+		text-align: center;
+		font-size: 26px;
+		margin: 30px 0 -15px;
+	}
+	.modal-login .form-control:focus {
+		border-color: #70c5c0;
+	}
+	.modal-login .form-control, .modal-login .btn {
+		min-height: 40px;
+		border-radius: 3px; 
+	}
+	.modal-login .close {
+        position: absolute;
+		top: -5px;
+		right: -5px;
+	}	
+	.modal-login .modal-footer {
+		background: #ecf0f1;
+		border-color: #dee4e7;
+		text-align: center;
+        justify-content: center;
+		margin: 0 -20px -20px;
+		border-radius: 5px;
+		font-size: 13px;
+	}
+	.modal-login .modal-footer a {
+		color: #999;
+	}		
+	.modal-login .avatar {
+		position: absolute;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		top: -70px;
+		width: 95px;
+		height: 95px;
+		border-radius: 50%;
+		z-index: 9;
+		background: #149DDD;
+		padding: 5px;
+		box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+	}
+	.modal-login .avatar img {
+		width: 100%;
+	}
+    .modal-login .btn {
+        color: #fff;
+        border-radius: 4px;
+		background: #149DDD;
+		text-decoration: none;
+		transition: all 0.4s;
+        line-height: normal;
+        border: none;
+    }
+
+	.modal-login .btn:hover, .modal-login .btn:focus {
+		background: #0e6a94;
+		outline: none;
+	}
+	.trigger-btn {
+		display: inline-block;
+		margin: 100px auto;
+	}
+</style> 
+</head>
+<body>
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+  <header id="header">
+    <div class="d-flex flex-column">
+      <div class="profile">
+        <img src="assets/img/linkedin_profile_image.png" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Reality First</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html" class="nav-link scrollto" active><i class="bx bx-home" style="color: #2DB6A3;"></i> <span>Inicio</span></a></li>
+          <li><a href="Eventos.html" class="nav-link scrollto" active><i class="bx bx-calendar-event" style="color: #2DB6A3;"></i> <span>Historial de Eventos</span></a></li>
+          <li><a href="Artistas.html" class="nav-link scrollto" active><i class="bx bx-star" style="color: #2DB6A3;"></i> <span>Artistas</span></a></li>
+          <li><a href="Noticias.html" class="nav-link scrollto" active><i class="bx bx-news" style="color: #2DB6A3;"></i> <span>Noticias</span></a></li>
+          <li><a href="NuevosEventos.html" class="nav-link scrollto" active><i class="bx bx-calendar-exclamation" style="color: #2DB6A3;"></i> <span>Nuevos Eventos</span></a></li>
+          <li><a href="TipoTicket.html" class="nav-link scrollto" active><i class="bx bx-calendar-exclamation" style="color: #2DB6A3;"></i> <span>Tipo Tickets</span></a></li>
+          <li><a href="Entradas.html" class="nav-link scrollto" active><i class="bx bx-dollar" style="color: #2DB6A3;"></i> <span>Comprar Entradas</span></a></li>
+          <li><a href="Nosotros.html" class="nav-link scrollto"><i class="bx bxs-business" style="color: #2DB6A3;"></i> <span>Nosotros</span></a></li>
+          <li><a href="Contacto.html" class="nav-link scrollto"><i class="bx bx-envelope" style="color: #2DB6A3;"></i> <span>Contacto</span></a></li>
+          <li><a href="#myModal" data-toggle="modal" class="nav-link scrollto"><i class="bx bx-user" style="color: #2DB6A3;"></i> <span>Login</span></a></li>
+        </ul>
+        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/3inFkZMAUrTnPFVSoLHb9O?utm_source=generator&theme=0" width="100%" height="260" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="section-title">
+            <h2>My Chemical Romance</h2>
+          </div>
+          <ol>
+            <li><a href="Entradas.html">Comprar Entradas</a></li>
+            <li>Detalles</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img src="my_chemical_romance_imag/Mapa-Movistar-Arena-.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="my_chemical_romance_imag/1652396325-fslueokuyaansxf.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img src="my_chemical_romance_imag/MCRChile (4).jpg" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Información del concierto</h3>
+              <ul>
+                <li><strong>Categoría</strong>: Pop</li>
+                <li><strong>Ubicación</strong>: Movistar Arena, Santiago</li>
+                <li><strong>Fecha</strong>: 24 de Septiembre de 2022</li>
+                <li><strong>Precio</strong>: $44.850</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <div class="form-group">
+                <button type="submit" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-lg btn-block login-btn" >Agregar al Carrito</i></button>
+              </div>  
+              <div class="form-group">
+                <button type="submit" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-lg btn-block login-btn">Comprar</button>
+              </div>  
+              <h2>Descripción del evento</h2>
+              <p>
+                Finalmente la banda de Gerard Way y compañía, 
+                My Chemical Romance, se presentará por primera 
+                vez en nuestro país el próximo domingo 24 de 
+                Septiembre en Movistar Arena a las 19:30 horas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer id="footer">
+    <div class="copyright">
+      &copy; Copyright <strong><span>Reality First - 2022</span></strong>
+    </div>
+    <div class="credits">
+      Desarrollado por <a href="#" style="color: #2DB6A3;">Femarick Team</a>
+    </div>
+</footer>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<div id="myModal" class="modal fade">
+<div class="modal-dialog modal-login">
+  <div class="modal-content">
+    <div class="modal-header">
+      <div class="avatar">
+        <img src="assets/img/linkedin_profile_image2.png" alt="Avatar">
+      </div>				
+      <h4 class="modal-title">Inicia Sesión</h4>	
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    </div>
+    <div class="modal-body" id="Cerrarmodal">
+      <form  method="post">
+        <div class="form-group">
+          <input type="email" class="form-control" name="email" placeholder="Correo" required="required">		
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control" name="password" placeholder="Contraseña" required="required">	
+        </div>        
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Entrar</button>
+        </div>  
+        <div class="form-group" align="right">
+          <a href="#">Olvidaste tu contraseña</a>
+        </div>
+      </form>  
+      <div class="form-group">
+        <button data-dismiss="modal"  type="submit" class="btn btn-success btn-lg btn-block login-btn" style="background-color: rgb(14, 177, 14);" >Continuar como Visita</button>
+      </div>  
+    </div>
+    <div class="modal-footer">
+      ¿No tienes una cuenta?<a href="Registro.html" style="color:#2DB6A3"> Regístrate</a>
+    </div>
+  </div>
+</div>
+</div>  1
+  </footer>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    $('#Cerrarmodal').on('hidden.bs.modal', function () {
+      
+    });
+  </script>
+  <script language="javascript">
+      function check(form)
+      {
+      if(form.userid.value == "usuario@usuario.cl" && form.pswrd.value == "usuario")
+        {
+          alert("Login Correcto!!! Bienvenido Usuario")
+        }
+      else
+      {
+        alert("Usuario o Contraseña incorrecto!!!")
+        }
+      }
+  </script>
+</body>
+</html>
