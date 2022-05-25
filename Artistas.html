@@ -139,32 +139,23 @@
       <div class="container">
         <div class="section-title">
           <h2>Artistas</h2>
-          <div class="row" id="onload"></div>
         </div>
-        <div id="artista"></div>
+        <div class=container aling="left">
+          <div class="row" id="onload">
+              <div id="artistas" class="col-sm-4">
+  
+              </div>
+          </div>
+      </div> 
           <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
           <script type="text/javascript">
               $(function(){
-                  const v_artista = $('#artista');
+                  const v_artista = $('#artistas');
                   $.get("https://pgyex2.azurewebsites.net/api/Artista").done(function(Art){
                           console.log({Art});
                           $.each(Art, function(index,element){
                               console.table({element});
-                              v_artista.append("Id Artista: "+element.id);
-                              v_artista.append("<br />");
-                              v_artista.append("Nombre: "+element.nombre);
-                              v_artista.append("<br />");
-                              v_artista.append("Fecha Nacimiento: "+element.fechaNacimiento);
-                              v_artista.append("<br />");
-                              v_artista.append("Lugar Nacimiento: "+element.lugarNacimiento);
-                              v_artista.append("<br />");
-                              v_artista.append("Pais Nacimiento: "+element.paisNacimiento);
-                              v_artista.append("<br />");
-                              v_artista.append("Edad: "+element.edad);
-                              v_artista.append("<br />");
-                              v_artista.append("Genero: "+element.genero);
-                              v_artista.append("<br />");
-                              v_artista.append("<br />");
+                              v_artista.append("<div class='card'><div class='card-header'>"+element.nombre+"</div><div class='card-body'><h5 class='card-title'>Id Artista: "+element.id+"</h5><h5 class='card-text'>Fecha Nacimiento: "+element.fechaNacimiento+"</h5><h5 class='card-text'>Lugar Nacimiento: "+element.lugarNacimiento+"</h5><h5 class='card-text'>Pais Nacimiento: "+element.paisNacimiento+"</h5><h5 class='card-text'>Edad: "+element.edad+"</h5><h5 class='card-text'>Genero: "+element.genero+"</h5></div></div><br />");
                           });
                   });
               });

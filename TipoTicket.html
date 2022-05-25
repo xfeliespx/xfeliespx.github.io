@@ -139,30 +139,28 @@
       <div class="container">
         <div class="section-title">
           <h2>Tickets</h2>
-          <div class="row" id="onload"></div>
         </div>
-    <div id="eventos"></div>
+        <div class=container aling="left">
+          <div class="row" id="onload">
+              <div id="ticket" class="col-sm-4">
+  
+              </div>
+          </div>
+      </div> 
+    <div id="ticket"></div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript">
-        $(function(){
-            const v_eventos = $('#eventos');
-            $.get("https://pgyex2.azurewebsites.net/api/TipoTicket").done(function(Eve){
-                    console.log({Eve});
-                    $.each(Eve, function(index,element){
-                        console.table({element});
-                        v_eventos.append("Id Tickey: "+element.id);
-                        v_eventos.append("<br />");
-                        v_eventos.append("Nombre: "+element.nombre);
-                        v_eventos.append("<br />");
-                        v_eventos.append("Asiento Numerado: "+element.asientoNumerado);
-                        v_eventos.append("<br />");
-                        v_eventos.append("valor: "+element.valor);
-                        v_eventos.append("<br />");
-                        v_eventos.append("<br />");
-                    });
-            });
-        });
-    </script>
+      $(function(){
+          const v_ticket = $('#ticket');
+          $.get("https://pgyex2.azurewebsites.net/api/TipoTicket").done(function(Tick){
+                  console.log({Tick});
+                  $.each(Tick, function(index,element){
+                      console.table({element});
+                      v_ticket.append("<div class='card'><div class='card-header'>"+element.nombre+"</div><div class='card-body'><h5 class='card-title'>Id Artista: "+element.id+"</h5><h5 class='card-text'>Fecha Nacimiento: "+element.asientoNumerado+"</h5><h5 class='card-text'>Lugar Nacimiento: "+element.valor+"</h5></div></div><br />");
+                  });
+          });
+      });
+  </script>
 </body>
 </div>
 </section>
